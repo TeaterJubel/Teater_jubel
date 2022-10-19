@@ -1,0 +1,16 @@
+{
+  "name": "teater_jubel",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "description": "Teater Jubel",
+  "devDependencies": {
+    "node-sass": "^7.0.3",
+    "prettier": "2.7.1"
+  }
+}

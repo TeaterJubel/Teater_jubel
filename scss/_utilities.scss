@@ -1,0 +1,49 @@
+.container {
+  max-width: $website-width;
+  padding: 1.5rem;
+  margin: auto;
+  overflow: hidden;
+}
+
+.vl {
+  border-left: 6px solid $yellow-color;
+  height: 500px;
+}
+
+.rubrik {
+  padding-top: 2rem;
+  font-size: $headfont-size;
+  text-transform: uppercase;
+  color: #000;
+  line-height: 1;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 2rem 0.8rem 2rem;
+  color: $yellow-color;
+  background: $pink-color;
+  font-family: $head-font;
+  font-size: 2rem;
+  text-transform: uppercase;
+  transition: all 0.5s;
+  border-radius: 1rem;
+  margin: 2rem 0 4rem 0;
+
+  &:hover {
+    background: $blue-color;
+  }
+}
+
+h2 {
+  font-family: $head-font;
+  font-size: 1.5rem;
+}
+
+.sticky {
+  position: sticky;
+}
+
+.toggler {
+  display: none;
+}

@@ -1,0 +1,831 @@
+.container {
+  max-width: 1440px;
+  padding: 1.5rem;
+  margin: auto;
+  overflow: hidden; }
+
+.vl {
+  border-left: 6px solid #ffda3f;
+  height: 500px; }
+
+.rubrik {
+  padding-top: 2rem;
+  font-size: 6rem;
+  text-transform: uppercase;
+  color: #000;
+  line-height: 1; }
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 2rem 0.8rem 2rem;
+  color: #ffda3f;
+  background: #d15484;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+  transition: all 0.5s;
+  border-radius: 1rem;
+  margin: 2rem 0 4rem 0; }
+  .btn:hover {
+    background: #252c5b; }
+
+h2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.5rem; }
+
+.sticky {
+  position: sticky; }
+
+.toggler {
+  display: none; }
+
+* {
+  padding: 0;
+  margin: 0; }
+
+html {
+  height: 100%; }
+
+body {
+  font-family: "Josefin Slab", serif;
+  line-height: 1.6;
+  background: #fff; }
+
+a {
+  text-decoration: none;
+  color: #333; }
+
+ul {
+  list-style: none; }
+
+img {
+  width: 100%; }
+
+#navbar {
+  background: #fff;
+  color: #333;
+  position: sticky;
+  z-index: 10;
+  top: 0;
+  transition: 0.5s; }
+  #navbar .navbar-content {
+    width: calc(100% - 10px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    #navbar .navbar-content #logo {
+      width: 80px;
+      transition: 0.5s;
+      padding: 5px; }
+  #navbar .navbar-link ul {
+    display: flex; }
+  #navbar .navbar-link li {
+    padding: 1rem 2rem;
+    display: inline-block; }
+    #navbar .navbar-link li ul {
+      display: none; }
+  #navbar .navbar-link a {
+    text-transform: uppercase;
+    font-family: "Josefin Sans", sans-serif;
+    border-bottom: 3px transparent solid;
+    padding-bottom: 0.5rem;
+    transition: border-color 0.2s;
+    font-size: 1.2rem; }
+    #navbar .navbar-link a:hover {
+      border-color: #d15484; }
+    #navbar .navbar-link a.current {
+      border-color: #d15484; }
+  #navbar .navbar-social ul {
+    display: flex; }
+  #navbar .navbar-social li {
+    padding: 10px; }
+  #navbar .navbar-social i {
+    color: #333;
+    transition: color 0.2s; }
+    #navbar .navbar-social i:hover {
+      color: #d15484; }
+
+#home-1 {
+  background: url(../img/banner.jpg) no-repeat center center/cover;
+  height: 70vh; }
+  #home-1 * {
+    z-index: 2; }
+  #home-1::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 70vh;
+    background: rgba(132, 108, 9, 0.5); }
+  #home-1 .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 70vh;
+    color: #fff; }
+    #home-1 .content p {
+      font-size: 2rem; }
+    #home-1 .content h1 {
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 11rem;
+      text-transform: uppercase; }
+
+#home-2 {
+  background: #252c5b;
+  color: #ffda3f; }
+  #home-2 .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem 0; }
+    #home-2 .content a {
+      font-family: "Josefin Sans", sans-serif;
+      color: #ffda3f;
+      transition: font-size 0.5s; }
+      #home-2 .content a:hover {
+        font-size: 3.4rem; }
+    #home-2 .content p {
+      font-size: 3rem;
+      line-height: 6rem; }
+
+#home-3 {
+  background: #ffda3f;
+  color: #000;
+  width: 100%;
+  padding: 2rem 0; }
+  #home-3 #forestallningar {
+    align-items: center;
+    justify-content: center;
+    text-align: center; }
+  #home-3 h1 {
+    font-size: 6rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-top: 0; }
+
+#home-4 {
+  width: 100%;
+  background: #252c5b; }
+  #home-4 #klackarna {
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2rem; }
+    #home-4 #klackarna img {
+      padding: 1rem;
+      width: 380px;
+      background: #fff;
+      transition: width 0.5s; }
+      #home-4 #klackarna img:hover {
+        width: 400px; }
+    #home-4 #klackarna .vl {
+      margin-left: 2rem; }
+    #home-4 #klackarna .content {
+      padding: 2rem; }
+      #home-4 #klackarna .content h1 {
+        font-size: 5rem;
+        font-family: "Josefin Sans", sans-serif;
+        color: #ffda3f;
+        line-height: 1; }
+      #home-4 #klackarna .content h3 {
+        font-size: 2rem;
+        font-family: "Josefin Sans", sans-serif;
+        color: #ffda3f;
+        padding-bottom: 1rem; }
+      #home-4 #klackarna .content p {
+        color: #fff;
+        font-size: 1.5rem; }
+
+#home-5 {
+  width: 100%;
+  background: #d15484; }
+  #home-5 #saga {
+    margin: 2rem 0;
+    display: flex;
+    padding-top: 2rem;
+    align-items: center;
+    justify-content: center; }
+    #home-5 #saga .content {
+      padding: 2rem;
+      text-align: right; }
+      #home-5 #saga .content h1 {
+        font-size: 5rem;
+        font-family: "Josefin Sans", sans-serif;
+        color: #ffda3f;
+        line-height: 1; }
+      #home-5 #saga .content h3 {
+        font-size: 2rem;
+        font-family: "Josefin Sans", sans-serif;
+        color: #ffda3f;
+        padding-bottom: 1rem; }
+      #home-5 #saga .content p {
+        color: #fff;
+        font-size: 1.5rem; }
+    #home-5 #saga .vl {
+      margin-right: 2rem; }
+    #home-5 #saga img {
+      padding: 1rem;
+      width: 380px;
+      background: #fff;
+      transition: width 0.5s; }
+      #home-5 #saga img:hover {
+        width: 400px; }
+
+#home-6 {
+  width: 100%;
+  background: #ffda3f; }
+  #home-6 #biljetter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 2rem;
+    line-height: 2; }
+    #home-6 #biljetter h2 {
+      color: #d15484;
+      padding-bottom: 1rem; }
+    #home-6 #biljetter p {
+      font-size: 2rem; }
+      #home-6 #biljetter p a,
+      #home-6 #biljetter p span {
+        font-family: "Josefin Sans", sans-serif;
+        color: #000; }
+
+#home-7 {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: #252c5b;
+  color: #fff;
+  line-height: 2; }
+  #home-7 h1 {
+    color: #fff; }
+  #home-7 .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 2rem; }
+    #home-7 .content .person {
+      padding: 1rem 4rem; }
+      #home-7 .content .person h3 {
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 1.5rem; }
+
+#home-8 {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: #ffda3f; }
+  #home-8 .mejl {
+    font-family: "Josefin Sans", sans-serif;
+    padding: 5rem;
+    font-size: 4rem; }
+    #home-8 .mejl a {
+      color: #d15484;
+      transition: color 0.2s; }
+      #home-8 .mejl a:hover {
+        color: #252c5b; }
+  #home-8 .footer {
+    display: flex;
+    justify-content: space-between; }
+    #home-8 .footer .adress {
+      padding: 2rem; }
+      #home-8 .footer .adress a {
+        font-size: 4rem;
+        color: #252c5b;
+        transition: color 0.2s; }
+        #home-8 .footer .adress a:hover {
+          color: #d15484; }
+    #home-8 .footer .social ul {
+      display: flex;
+      padding-right: 2rem; }
+    #home-8 .footer .social li {
+      padding: 2rem; }
+    #home-8 .footer .social i {
+      color: #252c5b;
+      transition: color 0.2s; }
+      #home-8 .footer .social i:hover {
+        color: #d15484; }
+
+#klackarna-1 {
+  background: #252c5b;
+  color: #fff; }
+  #klackarna-1 .top {
+    color: #ffda3f;
+    font-family: "Josefin Sans", sans-serif;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 1rem; }
+    #klackarna-1 .top h1 {
+      font-size: 5rem;
+      line-height: 1; }
+    #klackarna-1 .top h3 {
+      font-size: 2rem; }
+  #klackarna-1 .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+    line-height: 2;
+    font-size: 1.2rem; }
+    #klackarna-1 .content .text {
+      text-align: right;
+      padding: 2rem;
+      width: 500px; }
+    #klackarna-1 .content .info {
+      padding: 0.5rem;
+      background-color: #ffda3f;
+      color: #252c5b;
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 1.4rem;
+      width: 500px; }
+
+#klackarna-2 {
+  background: #252c5b; }
+  #klackarna-2 .top {
+    color: #ffda3f;
+    font-family: "Josefin Sans", sans-serif;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 2rem;
+    position: relative; }
+    #klackarna-2 .top h1 {
+      font-size: 5rem; }
+  #klackarna-2 .bilder {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 2rem 0 4rem 0; }
+    #klackarna-2 .bilder .bild {
+      margin: 2rem; }
+
+#saga-1 {
+  background: #d15484;
+  color: #fff; }
+  #saga-1 .top {
+    color: #ffda3f;
+    font-family: "Josefin Sans", sans-serif;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 1rem; }
+    #saga-1 .top h1 {
+      font-size: 5rem;
+      line-height: 1; }
+    #saga-1 .top h3 {
+      font-size: 2rem; }
+  #saga-1 .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+    line-height: 2;
+    font-size: 1.2rem; }
+    #saga-1 .content .text {
+      text-align: right;
+      padding: 2rem;
+      width: 500px; }
+    #saga-1 .content .info {
+      padding: 0.5rem;
+      background-color: #ffda3f;
+      color: #d15484;
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 1.4rem;
+      width: 500px; }
+
+@media (hover: hover) {
+  #navbar .navbar-link ul li:hover ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 180px;
+    margin-top: 1rem; }
+    #navbar .navbar-link ul li:hover ul li {
+      display: block;
+      background: #fff;
+      padding: 1rem;
+      text-align: center; } }
+
+@media (max-width: 1200px) {
+  #navbar .navbar-link li {
+    padding: 1rem 1.5rem; }
+  #home-1 .content h1 {
+    font-size: 8rem; }
+  #home-4 #klackarna .content h1 {
+    font-size: 4rem; }
+  #home-4 #klackarna .content h3 {
+    font-size: 1.5rem; }
+  #home-4 #klackarna .content p {
+    font-size: 1.2rem; }
+  #home-5 #saga .content h1 {
+    font-size: 4rem; }
+  #home-5 #saga .content h3 {
+    font-size: 1.5rem; }
+  #home-5 #saga .content p {
+    font-size: 1.2rem; } }
+
+@media (max-width: 1000px) {
+  #navbar .navbar-link li {
+    padding: 1rem; }
+  #navbar .navbar-link a {
+    font-size: 1rem; }
+  #home-1 {
+    height: 50vh; }
+    #home-1::before {
+      height: 50vh; }
+    #home-1 .content {
+      height: 50vh; }
+      #home-1 .content p {
+        font-size: 1rem; }
+      #home-1 .content h1 {
+        font-size: 6rem; }
+  #home-2 .content {
+    padding: 1rem 0; }
+    #home-2 .content p {
+      font-size: 2rem;
+      line-height: 4rem; }
+  #home-3 {
+    padding: 0.6rem 0; }
+    #home-3 h1 {
+      font-size: 4rem; }
+  #home-4 #klackarna img {
+    width: 240px; }
+  #home-4 #klackarna .vl {
+    height: 400px; }
+  #home-4 #klackarna .content h1 {
+    font-size: 3rem; }
+  #home-4 #klackarna .content h3 {
+    font-size: 1.2rem; }
+  #home-5 #saga img {
+    width: 240px; }
+  #home-5 #saga .vl {
+    height: 400px; }
+  #home-5 #saga .content h1 {
+    font-size: 3rem;
+    line-height: 1.2; }
+  #home-5 #saga .content h3 {
+    font-size: 1.2rem; }
+  #home-6 #biljetter h1 {
+    font-size: 4rem;
+    padding-top: 0; }
+  #home-6 #biljetter p {
+    font-size: 1.5rem; }
+  #home-7 h1 {
+    font-size: 4rem; }
+  #home-7 .content {
+    grid-template-columns: 1fr 1fr; }
+  #home-8 .mejl {
+    font-size: 3rem; }
+  #home-8 .footer .adress a {
+    font-size: 2rem; } }
+
+@media (max-width: 800px) {
+  .none {
+    display: block; }
+  .container {
+    padding: 1rem; }
+  #navbar .navbar-link .menu-wrap {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 50; }
+    #navbar .navbar-link .menu-wrap .menu {
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      visibility: hidden;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      #navbar .navbar-link .menu-wrap .menu > div {
+        background: rgba(37, 44, 91, 0.9);
+        width: 200vw;
+        height: 200vh;
+        border-radius: 50%;
+        display: flex;
+        flex: none;
+        align-items: center;
+        justify-content: center;
+        transform: scale(0);
+        transition: all 0.4s ease; }
+        #navbar .navbar-link .menu-wrap .menu > div > div {
+          text-align: center;
+          max-width: 90vw;
+          max-height: 100vh;
+          opacity: 0;
+          transition: opacity 0.4s ease; }
+          #navbar .navbar-link .menu-wrap .menu > div > div ul {
+            display: flex;
+            flex-direction: column; }
+            #navbar .navbar-link .menu-wrap .menu > div > div ul li {
+              font-size: 2rem; }
+              #navbar .navbar-link .menu-wrap .menu > div > div ul li ul {
+                display: flex;
+                flex-direction: row; }
+                #navbar .navbar-link .menu-wrap .menu > div > div ul li ul li {
+                  padding-bottom: 0;
+                  margin-bottom: 0; }
+                  #navbar .navbar-link .menu-wrap .menu > div > div ul li ul li a {
+                    font-size: 1.2rem; }
+              #navbar .navbar-link .menu-wrap .menu > div > div ul li a {
+                color: #ffda3f;
+                font-size: 1.5rem; }
+    #navbar .navbar-link .menu-wrap .toggler {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 100;
+      cursor: pointer;
+      width: 70px;
+      height: 70px;
+      opacity: 0; }
+      #navbar .navbar-link .menu-wrap .toggler:checked + .hamburger > div {
+        transform: rotate(135deg); }
+      #navbar .navbar-link .menu-wrap .toggler:checked + .hamburger > div::before,
+      #navbar .navbar-link .menu-wrap .toggler:checked + .hamburger > div::after {
+        top: 0;
+        transform: rotate(90deg); }
+      #navbar .navbar-link .menu-wrap .toggler:checked ~ .menu {
+        visibility: visible; }
+        #navbar .navbar-link .menu-wrap .toggler:checked ~ .menu > div {
+          transform: scale(1);
+          transition: 0.5s; }
+          #navbar .navbar-link .menu-wrap .toggler:checked ~ .menu > div > div {
+            opacity: 1;
+            transition: opacity 0.5s ease 0.3s; }
+    #navbar .navbar-link .menu-wrap .hamburger {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 49;
+      width: 40px;
+      height: 40px;
+      padding: 1rem;
+      background: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      #navbar .navbar-link .menu-wrap .hamburger div {
+        position: relative;
+        flex: none;
+        width: 100%;
+        height: 2px;
+        background: #333;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        transition: all 0.2s ease; }
+        #navbar .navbar-link .menu-wrap .hamburger div::before, #navbar .navbar-link .menu-wrap .hamburger div::after {
+          content: "";
+          position: absolute;
+          z-index: 49;
+          top: -10px;
+          width: 100%;
+          height: 2px;
+          background: inherit; }
+        #navbar .navbar-link .menu-wrap .hamburger div::after {
+          top: 10px; }
+  #navbar .navbar-social {
+    margin-right: 40%; }
+    #navbar .navbar-social ul li {
+      margin: 0 20%; }
+  #home-2 .content {
+    padding: 0; }
+    #home-2 .content p {
+      font-size: 1.5rem;
+      line-height: 3rem; }
+  #home-3 h1 {
+    font-size: 3.5rem; }
+  #home-4 #klackarna {
+    flex-direction: column;
+    margin: 0; }
+    #home-4 #klackarna .vl {
+      display: none; }
+  #home-5 #saga {
+    flex-direction: column;
+    margin: 0 0 1rem 0;
+    padding: 0; }
+    #home-5 #saga .content {
+      text-align: left; }
+    #home-5 #saga .vl {
+      display: none; }
+  #home-7 .content .person {
+    padding: 1rem 2rem; }
+    #home-7 .content .person h3 {
+      line-height: 1.4; }
+  #home-8 .top h1 {
+    font-size: 4rem; }
+  #home-8 .mejl {
+    font-size: 3rem;
+    padding: 1rem; }
+  #klackarna-1 .top h1 {
+    font-size: 4rem; }
+  #klackarna-1 .top h3 {
+    font-size: 1.5rem; }
+  #klackarna-1 .content {
+    flex-direction: column;
+    padding: 0 0 2rem 0; }
+    #klackarna-1 .content .text {
+      text-align: left;
+      padding: 1rem; }
+  #klackarna-2 .bilder {
+    margin: 1rem 0 2rem 0; }
+    #klackarna-2 .bilder .bild {
+      margin: 1rem; }
+  #saga-1 .top h1 {
+    font-size: 4rem; }
+  #saga-1 .top h3 {
+    font-size: 1.5rem; }
+  #saga-1 .content {
+    flex-direction: column;
+    padding: 0 0 2rem 0; }
+    #saga-1 .content .text {
+      text-align: left;
+      padding: 1rem; } }
+
+@media (max-width: 600px) {
+  #home-1 {
+    height: 30vh; }
+    #home-1::before {
+      height: 30vh; }
+    #home-1 .content {
+      height: 30vh; }
+      #home-1 .content p {
+        font-size: 0.8rem; }
+      #home-1 .content h1 {
+        font-size: 3rem; }
+  #home-2 .content p {
+    font-size: 1rem;
+    line-height: 2rem; }
+  #home-3 {
+    padding: 0; }
+    #home-3 h1 {
+      font-size: 2.5rem; }
+  #home-4 #klackarna .content h1 {
+    font-size: 2.5rem; }
+  #home-4 #klackarna .content h3 {
+    font-size: 1rem; }
+  #home-4 #klackarna .content p {
+    font-size: 1rem; }
+  #home-5 #saga .content h1 {
+    font-size: 2.5rem; }
+  #home-5 #saga .content h3 {
+    font-size: 1rem; }
+  #home-5 #saga .content p {
+    font-size: 1rem; }
+  #home-6 #biljetter h1 {
+    font-size: 2.5rem; }
+  #home-6 #biljetter h2 {
+    font-size: 1rem; }
+  #home-6 #biljetter p {
+    font-size: 1rem; }
+  #home-6 #biljetter .btn {
+    font-size: 1.2rem;
+    padding: 0.6rem 1.2rem 0.6rem 1.2rem; }
+  #home-7 #om h1 {
+    font-size: 2.5rem; }
+  #home-7 #om h2 {
+    font-size: 1rem; }
+  #home-7 #om .content h3 {
+    font-size: 1rem; }
+  #home-7 #om .content p {
+    font-size: 1rem; }
+  #home-7 #om .content .person {
+    padding: 0 1rem; }
+  #home-8 .top h1 {
+    font-size: 2.5rem; }
+  #home-8 .top h2 {
+    font-size: 1rem; }
+  #home-8 .mejl {
+    font-size: 1.6rem; }
+  #home-8 .footer {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center; }
+    #home-8 .footer .adress a {
+      font-size: 1.5rem; }
+    #home-8 .footer .social ul {
+      padding: 0; }
+  #klackarna-1 .top h1 {
+    font-size: 2.5rem; }
+  #klackarna-1 .top h3 {
+    font-size: 1rem; }
+  #klackarna-1 .content {
+    font-size: 0.8rem; }
+    #klackarna-1 .content .text {
+      width: auto; }
+    #klackarna-1 .content .info {
+      width: auto;
+      font-size: 1rem; }
+  #klackarna-2 .top h1 {
+    font-size: 2rem; }
+  #klackarna-2 .bilder {
+    margin: 0; }
+    #klackarna-2 .bilder .bild {
+      margin: 2px; }
+  #saga-1 .top h1 {
+    font-size: 2.5rem; }
+  #saga-1 .top h3 {
+    font-size: 1rem; }
+  #saga-1 .content {
+    font-size: 0.8rem; }
+    #saga-1 .content .text {
+      width: auto; }
+    #saga-1 .content .info {
+      width: auto;
+      font-size: 1rem; } }
+
+@media (max-width: 420px) {
+  #home-1 {
+    height: 20vh; }
+    #home-1::before {
+      height: 20vh; }
+    #home-1 .content {
+      height: 20vh; }
+      #home-1 .content p {
+        font-size: 0.8rem; }
+      #home-1 .content h1 {
+        font-size: 2rem; }
+  #home-2 .content {
+    padding: 0; }
+    #home-2 .content p {
+      font-size: 0.8rem;
+      line-height: 2rem; }
+  #home-3 {
+    padding: 0; }
+    #home-3 h1 {
+      font-size: 1.8rem; }
+  #home-4 #klackarna {
+    padding-top: 1rem; }
+    #home-4 #klackarna img {
+      padding: 0.6rem;
+      width: 200px; }
+    #home-4 #klackarna .content {
+      padding: 1rem; }
+  #home-5 #saga img {
+    padding: 0.6rem;
+    width: 200px; }
+  #home-5 #saga .content {
+    padding: 1rem; }
+    #home-5 #saga .content h1 {
+      line-height: 1.2; }
+  #home-7 #om h1 {
+    font-size: 2.5rem; }
+  #home-7 #om h2 {
+    font-size: 1rem; }
+  #home-7 #om .content {
+    grid-template-columns: 1fr; }
+    #home-7 #om .content h3 {
+      font-size: 1rem; }
+    #home-7 #om .content p {
+      font-size: 1rem; }
+    #home-7 #om .content .person {
+      padding: 1rem 2rem; }
+  #home-8 .mejl {
+    font-size: 1.4rem; }
+  #home-8 .footer .adress a {
+    font-size: 1.4rem; }
+  #klackarna-1 .top h1 {
+    font-size: 2.5rem; }
+  #klackarna-1 .top h3 {
+    font-size: 1rem; }
+  #klackarna-1 .content {
+    font-size: 0.8rem; }
+    #klackarna-1 .content .text {
+      width: auto; }
+    #klackarna-1 .content .info {
+      width: auto;
+      font-size: 1rem; }
+  #klackarna-2 .top {
+    padding: 1rem; }
+    #klackarna-2 .top h1 {
+      font-size: 2rem; }
+  #klackarna-2 .bilder {
+    grid-template-columns: 1fr; }
+    #klackarna-2 .bilder .bild {
+      margin: 2px; }
+  #saga-1 .top h1 {
+    font-size: 2.5rem; }
+  #saga-1 .top h3 {
+    font-size: 1rem; }
+  #saga-1 .content {
+    font-size: 0.8rem; }
+    #saga-1 .content .text {
+      width: auto; }
+    #saga-1 .content .info {
+      width: auto;
+      font-size: 1rem; } }
+
+@media (max-width: 300px) {
+  #navbar .navbar-social ul li {
+    margin: 0; } }
