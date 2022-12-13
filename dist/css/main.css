@@ -477,7 +477,7 @@ img {
   #home-6 #biljetter h1 {
     font-size: 4rem;
     padding-top: 0; }
-  #home-6 #biljetter p {
+  #home-6 #biljetter .avsnitt p {
     font-size: 1.5rem; }
   #home-7 h1 {
     font-size: 4rem; }
@@ -690,9 +690,11 @@ img {
     font-size: 2.5rem; }
   #home-6 #biljetter h2 {
     font-size: 1rem; }
-  #home-6 #biljetter p {
-    font-size: 1rem; }
-  #home-6 #biljetter .btn {
+  #home-6 #biljetter .avsnitt p {
+    font-size: 1.2rem; }
+  #home-6 #biljetter .avsnitt h4 {
+    font-size: 1.4rem; }
+  #home-6 #biljetter .avsnitt .btn {
     font-size: 1.2rem;
     padding: 0.6rem 1.2rem 0.6rem 1.2rem; }
   #home-7 #om h1 {

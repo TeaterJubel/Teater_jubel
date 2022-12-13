@@ -173,8 +173,10 @@
           font-size: 4rem;
           padding-top: 0;
         }
-        p {
-          font-size: 1.5rem;
+        .avsnitt {
+          p {
+            font-size: 1.5rem;
+          }
         }
       }
     }
@@ -575,12 +577,18 @@
         h2 {
           font-size: 1rem;
         }
-        p {
-          font-size: 1rem;
-        }
-        .btn {
-          font-size: 1.2rem;
-          padding: 0.6rem 1.2rem 0.6rem 1.2rem;
+
+        .avsnitt {
+          p {
+            font-size: 1.2rem;
+          }
+          h4 {
+            font-size: 1.4rem;
+          }
+          .btn {
+            font-size: 1.2rem;
+            padding: 0.6rem 1.2rem 0.6rem 1.2rem;
+          }
         }
       }
     }
