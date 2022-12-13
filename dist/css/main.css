@@ -249,10 +249,14 @@ img {
     #home-6 #biljetter h2 {
       color: #d15484;
       padding-bottom: 1rem; }
-    #home-6 #biljetter p {
+    #home-6 #biljetter .avsnitt h4 {
+      font-size: 3rem;
+      color: #252c5b;
+      line-height: 1.5; }
+    #home-6 #biljetter .avsnitt p {
       font-size: 2rem; }
-      #home-6 #biljetter p a,
-      #home-6 #biljetter p span {
+      #home-6 #biljetter .avsnitt p a,
+      #home-6 #biljetter .avsnitt p span {
         font-family: "Josefin Sans", sans-serif;
         color: #000; }
 

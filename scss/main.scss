@@ -322,13 +322,21 @@ img {
         padding-bottom: 1rem;
       }
 
-      p {
-        font-size: 2rem;
+      .avsnitt {
+        h4 {
+          font-size: 3rem;
+          color: $blue-color;
+          line-height: 1.5;
+        }
 
-        a,
-        span {
-          font-family: $head-font;
-          color: #000;
+        p {
+          font-size: 2rem;
+
+          a,
+          span {
+            font-family: $head-font;
+            color: #000;
+          }
         }
       }
     }
