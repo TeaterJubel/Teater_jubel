@@ -259,6 +259,9 @@ img {
       #home-6 #biljetter .avsnitt p span {
         font-family: "Josefin Sans", sans-serif;
         color: #000; }
+    #home-6 #biljetter .avsnitt iframe {
+      width: 50%;
+      height: 50%; }
 
 #home-7 {
   align-items: center;
