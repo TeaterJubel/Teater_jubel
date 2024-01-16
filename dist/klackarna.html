@@ -8,167 +8,187 @@
       src="https://kit.fontawesome.com/5cc0a5aae3.js"
       crossorigin="anonymous"
     ></script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Josefin+Slab:wght@600;700&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
-    ></script>
-    <link rel="stylesheet" href="css/main.css" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+
+    <script src="/scripts/lightbox-plus-jquery.js"></script>
+
+    <link href="css/lightbox.css" rel="stylesheet"/>
+
+
     <title>Teater Jubel</title>
-    <link rel="icon" type="image/icon" href="favicon.ico" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <script>
+      lightbox.option({
+        'resizeDuration': 200,
+        'wrapAround': true
+      });
+  </script>
   </head>
 
-  <body>
-    <!-- Navbar -->
-    <nav id="navbar">
-      <div class="navbar-content">
-        <a href="index.html">
-          <img src="img/Logga.png" alt="Teater Jubel" id="logo" />
-        </a>
-        <div class="navbar-link">
-          <div class="menu-wrap">
-            <input type="checkbox" class="toggler" />
-            <div class="hamburger none"><div class="none"></div></div>
-            <div class="menu">
-              <div>
-                <div>
-                  <ul>
-                    <li><a href="index.html">Hem</a></li>
-                    <li>
-                      <a href="index.html#forestallningar" class="current"
-                        >Föreställningar</a
-                      >
-                      <ul>
-                        <li><a href="klackarna.html">Klackarna</a></li>
-                        <li><a href="saga.html">En saga</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="index.html#biljetter">Biljetter</a></li>
-                    <li><a href="index.html#om">Om Oss</a></li>
-                    <li><a href="#kontakt">Kontakt</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="navbar-social">
-          <ul>
-            <li>
-              <a href="http://instagram.com/teaterjubel" target="_blank"
-                ><i class="fa-brands fa-instagram fa-2x"></i
-              ></a>
-            </li>
-            <li>
-              <a href="http://facebook.com/teaterjubel" target="_blank"
-                ><i class="fa-brands fa-facebook fa-2x"></i
-              ></a>
-            </li>
+<body>
+  <nav id="navbar" class="navbar-content">
+    <a href="index.html">
+      <img src="img/Logga.png" alt="Teater Jubel" id="logo">
+    </a>
+    <div class="navbar-link">
+      <div class="menu-wrap">
+      <input type="checkbox" class="toggler">
+      <div class="hamburger none"><div class="none"></div></div>
+      <div class="menu">
+        <div>
+          <div>
+            <ul>
+              <li><a href="index.html">Hem</a></li>
+              <li><a href="forestallningar.html">Föreställningar</a></li>
+            <li><a href="biljetter.html">Biljetter</a></li>
+            <li><a href="om.html">Om Oss</a></li>
+            <li><a href="arkivet.html" class="current">Arkivet</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
           </ul>
         </div>
-      </div>
-    </nav>
-
-    <!-- Klackarna 1: Klackarna -->
-    <section id="klackarna-1">
-      <img src="img/Poster-Klackarna-Banner.png" alt="" />
-      <div id="klackarna" class="container">
-        <div class="top">
-          <h1>Klackarna i Taket</h1>
-          <h3>En Musikteater med musik av Lill Lindfors</h3>
-        </div>
-        <div class="content">
-          <div class="text">
-            <p>
-              Vi befinner oss på Folkets park, 1960. Det är fredag och dags för
-              dans! Tillsammans med musik från Lill Lindfors tas ni på en resa
-              om glädjen till musiken, dansen, nostalgin och minnena från de där
-              varma sena sommarkvällarna i parken. Hur var det egentligen? Med
-              allt från sångerna “En sån karl” till “Musik ska byggas utav
-              glädje” bjuder vi in till en afton som ni garanterat kommer att
-              nynna på länge!
-            </p>
-          </div>
-          <div class="info">
-            <p>
-              Längd: 45 minuter <br />
-              Målgrupp: 10 år och uppåt <br />
-              Bokningsbar / Offentliga föreställningar <br />
-              Biljettpris: 80 - 100 kr <br />
-              Bokningspris: 5000 kr i Västra Götalandsregionen, <br />
-              6000 kr i resten av Sverige.
-            </p>
-          </div>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+    <div class="navbar-social">
+      <ul>
+        <li>
+          <a href="http://instagram.com/teaterjubel" target="_blank"
+            ><i class="fa-brands fa-instagram fa-3x"></i
+          ></a>
+        </li>
+        <li>
+          <a href="http://facebook.com/teaterjubel" target="_blank"
+            ><i class="fa-brands fa-facebook fa-3x"></i
+          ></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-    <!-- Home 6: Biljetter -->
-    <section id="home-6">
-      <div class="container">
-        <div id="biljetter">
-          <div class="top">
-            <h1 class="rubrik">Biljetter</h1>
-            <h2>
-              Tyvärr har vi inga offentliga föreställningar för tillfället
-            </h2>
-          </div>
-        </div>
+<section id="klackarna-1">
+  <div class="container content">
+    <h1>Klackarna i Taket</h1>
+    <h3>En Musikteater med musik av Lill Lindfors</h3>
+  </div>
+</section>
+
+<section id="klackarna-2">
+  <div class="container content">
+    <p>
+      Tänk er att vi befinner oss på Folkets park, 1960. Det är fredag och dags för dans! Hur var det
+      egentligen de där sena sommarkvällarna på dansbanan? Tillsammans med musik från Lill Lindfors tas
+      ni på en resa om glädjen till musiken, dans och nostalgin. Med allt ifrån “En sån karl” till “Musik ska
+      byggas utav glädje” bjuder vi in till en afton som ni kommer att nynna på länge!
+    </p>
+    <div class="text">
+    <h4>Regi</h4>
+    <p>Jennie Rydén</p>
+  </div>
+  <div class="text">
+    <h4>På Scen</h4>
+    <p>Axel Isaksson, Benjamin Blomqvist, Emma Landegren, Lynn Westlander, Linnéa Hagesjö, Lilli Bruksås, Simon Magné, Ebba Backlund Hammar, Nils Jensen</p>
+  </div>
+  <div class="text">
+    <h4>Spelperiod</h4>
+    <p>Hösten 2022 - Våren 2023</p>
+  </div>
+  <div class="text">
+    <h4>Antal Föreställningar</h4>
+    <p>63 st</p>
+  </div>
+    <img src="img/Poster Klackarna.png" alt="Poster Klackarna i Taket">
+  </div>
+</section>
+
+<section id="klackarna-3">
+  <div class="container">
+    <h2>Bilder ur föreställningen</h2>
+    <div class="gallery">
+    <a href="img/Klackarna/K-1.JPG" data-lightbox="gallery-1">
+      <img src="img/Klackarna/K-1.JPG" alt="Klackarna-1">
+    </a>
+    <a href="img/Klackarna/K-2.JPG" data-lightbox="gallery-1">
+      <img src="img/Klackarna/K-2.JPG" alt="Klackarna-2">
+    </a>
+    <a href="img/Klackarna/K-3.JPG" data-lightbox="gallery-1">
+      <img src="img/Klackarna/K-3.JPG" alt="Klackarna-3">
+    </a>
+    <a href="img/Klackarna/K-4.JPG" data-lightbox="gallery-1">
+      <img src="img/Klackarna/K-4.JPG" alt="Klackarna-4">
+    </a>
+    <a href="img/Klackarna/K-5.JPG" data-lightbox="gallery-1">
+      <img src="img/Klackarna/K-5.JPG" alt="Klackarna-5">
+    </a>
+    <a href="img/Klackarna/K-6.JPG" data-lightbox="gallery-1">
+      <img src="img/Klackarna/K-6.JPG" alt="Klackarna-6">
+    </a>
+    <a href="img/Klackarna/K-7.JPG" data-lightbox="gallery-1">
+      <img src="img/Klackarna/K-7.JPG" alt="Klackarna-7">
+    </a>
+    <a href="img/Klackarna/K-8.JPG" data-lightbox="gallery-1">
+      <img src="img/Klackarna/K-8.JPG" alt="Klackarna-8">
+    </a>
+    <a href="img/Klackarna/K-9.JPG" data-lightbox="gallery-1">
+      <img src="img/Klackarna/K-9.JPG" alt="Klackarna-9">
+    </a>
+  </div>
+  </div>
+</section>
+
+<!-- Home-4: Vem Vet? -->
+<section id="home-4">
+  <div id="vemvet" class="container content">
+      <a href="vemvet.html">
+        <img src="img/Vem Vet Poster.png" alt="Poster Vem Vet?">
+      </a>
+      <div class="vl"></div>
+      <div class="text">
+        <a href="vemvet.html"><h2>Vem Vet?</h2>
+        <h3>En komisk musikteater om beslutsångest</h3>
+        <p>Ett bröllopsband väntar på att få spela, repeterar gamla goingar och beställer pizza inför bröllopsfesten som förväntas pågå hela natten. Då kommer bruden in, med sminket rinnande nedför kinderna. Och en ledsen brud… På hennes eget bröllop… Det kan ju bara betyda en sak…</p></a>
       </div>
-    </section>
+  </div>
+</section>
 
-    <!-- Klackarna 2: Bilder ur Föreställningen -->
-    <section id="klackarna-2">
-      <div id="klackarna" class="container">
-        <div class="top">
-          <h1>BILDER</h1>
-        </div>
-        <div class="bilder">
-          <div class="bild">
-            <img src="/img/K_1.jpg" alt="Bild 1" />
-          </div>
-          <div class="bild">
-            <img src="/img/K_2.jpg" alt="Bild 2" />
-          </div>
-          <div class="bild">
-            <img src="/img/K_3.jpg" alt="Bild 3" />
-          </div>
-          <div class="bild">
-            <img src="/img/K_4.jpg" alt="Bild 4" />
-          </div>
-          <div class="bild">
-            <img src="/img/K_5.jpg" alt="Bild 5" />
-          </div>
-          <div class="bild">
-            <img src="/img/K_6.jpg" alt="Bild 6" />
-          </div>
-        </div>
-      </div>
-    </section>
+<!-- Home 5: Saga -->
+<section id="home-5">
+  <div id="saga" class="container content">
+        <a href="saga.html">
+         <h2>En Saga om... Vadå?</h2>
+          <h3>En interaktiv improviserad barnföreställning</h3>
+        <p>
+          Tänk dig en saga där barnen själva får bestämma vad som ska hända. Kanske blir det en busschaufför som upptäcker att han kan resa i tiden? Eller en drottning som möter en häxa på Liseberg? Barnens kreativitet välkomnas och får en plats i historien, det är till och med den som är grunden till hela föreställningen. I våra sagor är allt möjligt!
+        </p> </a>
+      <div class="vl"></div>
+      <a href="saga.html">
+        <img
+          src="img/Poster En saga om... Vadå.png"
+          alt="Poster En Saga om... Vadå?"
+        />
+      </a>
+  </div>
+</section>
 
-    <!-- Home 8: Kontakt -->
-    <section id="home-8">
-      <div id="kontakt" class="container">
-        <div class="top">
-          <h1 class="rubrik">Kontakt</h1>
-          <h2>
-            Är du sugen på att boka oss? Eller vill du bara veta lite mer?<br />
-            Skicka iväg ett mejl!
-          </h2>
-        </div>
-        <div class="mejl">
-          <a href="mailto: kontakt@teaterjubel.se">kontakt@teaterjubel.se</a>
-        </div>
-        <div class="footer">
+<section id="home-7">
+  <div id="kontakt" class="container">
+    <div class="top">
+      <h2>Kontakt</h2>
+      <h4>Är du sugen på att boka oss? Eller vill du bara veta lite mer? <br>
+      Skicka iväg ett mejl!</h4>
+    </div>  
+      <a href="mailto: kontakt@teaterjubel.se"><h3>kontakt@teaterjubel.se</h3></a>
+      <div class="footer">
           <div class="adress">
-            <a
-              href="https://www.google.com/maps/place/Teater+Jubel/@57.6640641,12.1232892,19.29z/data=!4m5!3m4!1s0x464ff191d243f9ad:0x63d7198c0a32fa56!8m2!3d57.6639308!4d12.1234309"
-              target="_blank"
-              >Per Ekströms Väg 5</a
-            >
+            <a href="https://www.google.com/maps/place/Teater+Jubel/@57.734508,12.0935489,15z/data=!4m2!3m1!1s0x0:0x63d7198c0a32fa56?sa=X&ved=2ahUKEwi-9biMicKDAxWVBxAIHT-iDzoQ_BJ6BAgREAA" target="_blank"><h3>Per Ekströms Väg 5</h3></a>
           </div>
           <div class="social">
             <ul>
@@ -184,58 +204,45 @@
               </li>
             </ul>
           </div>
-        </div>
       </div>
-    </section>
+  </div>
+</section>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
-      $(document).ready(function () {
-        // Add smooth scrolling to all links
-        $("a").on("click", function (event) {
-          // Make sure this.hash has a value before overriding default behavior
-          if (this.hash !== "") {
-            // Prevent default anchor click behavior
-            event.preventDefault();
-
-            // Store hash
-            var hash = this.hash;
-
-            // Using jQuery's animate() method to add smooth page scroll
-            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-            $("html, body").animate(
-              {
-                scrollTop: $(hash).offset().top,
-              },
-              800,
-              function () {
-                // Add hash (#) to URL when done scrolling (default click behavior)
-                window.location.hash = hash;
-              }
-            );
-          } // End if
-        });
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+    
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+    
+          // Store hash
+          var hash = this.hash;
+    
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+    
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
       });
+    });
     </script>
 
-    <script>
-      // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
-      window.onscroll = function () {
-        scrollFunction();
-      };
+<script type="text/javascript">
+  ;( function( $ ) {
+  
+    $( '.swipebox' ).swipebox();
+  
+  } )( jQuery );
+  </script>
 
-      function scrollFunction() {
-        if (
-          document.body.scrollTop > 60 ||
-          document.documentElement.scrollTop > 60
-        ) {
-          document.getElementById("navbar").style.padding = "5px 15px";
-          document.getElementById("logo").style.width = "50px";
-        } else {
-          document.getElementById("navbar").style.padding = "10px";
-          document.getElementById("logo").style.width = "80px";
-        }
-      }
-    </script>
   </body>
 </html>

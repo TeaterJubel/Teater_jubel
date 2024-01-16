@@ -7,19 +7,17 @@
   margin: 0;
 }
 
-html {
-  height: 100%;
-}
-
 body {
-  font-family: "Josefin Slab", serif;
+  font-family: "Josefin Sans", serif;
   line-height: 1.6;
-  background: $white-color;
+  background: #fff;
+  text-align: center;
 }
 
 a {
   text-decoration: none;
-  color: $dark-color;
+  color: #000;
+  font-weight: 600;
 }
 
 ul {
@@ -30,59 +28,86 @@ img {
   width: 100%;
 }
 
+h1,
+h2 {
+  font-weight: 700;
+}
+
+h1 {
+  color: #ffda3f;
+  font-size: 8rem;
+}
+
+h2 {
+  font-size: 5rem;
+  text-transform: uppercase;
+  line-height: 1.4;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.8rem;
+}
+
+p {
+  font-size: 1.4rem;
+}
+
 // Navbar
 #navbar {
-  background: $white-color;
-  color: $dark-color;
   position: sticky;
   z-index: 10;
   top: 0;
   transition: 0.5s;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  background: #fff;
+
+  #logo {
+    width: 80px;
+    transition: 0.5s;
+    padding: 5px;
+  }
 
   .navbar {
     &-content {
-      width: calc(100% - 10px);
+      width: calc(100%-10px);
       display: flex;
       align-items: center;
       justify-content: space-between;
-
-      // Logo
-      #logo {
-        width: 80px;
-        transition: 0.5s;
-        padding: 5px;
-      }
     }
 
     &-link {
+      .toggler {
+        display: none;
+      }
+
       ul {
         display: flex;
-      }
 
-      li {
-        padding: 1rem 2rem;
-        display: inline-block;
+        li {
+          padding: 1rem 2rem;
+          display: inline-block;
 
-        // Nested UL
-        ul {
-          display: none;
-        }
-      }
+          a {
+            text-transform: uppercase;
+            border-bottom: 3px transparent solid;
+            padding-bottom: 0.2rem;
+            transition: border-color 0.2s;
+            font-size: 1.4rem;
 
-      a {
-        text-transform: uppercase;
-        font-family: $head-font;
-        border-bottom: 3px transparent solid;
-        padding-bottom: 0.5rem;
-        transition: border-color 0.2s;
-        font-size: 1.2rem;
+            &.current {
+              border-color: $pink;
+            }
 
-        &:hover {
-          border-color: $pink-color;
-        }
-
-        &.current {
-          border-color: $pink-color;
+            &:hover {
+              border-color: $pink;
+            }
+          }
         }
       }
     }
@@ -90,346 +115,328 @@ img {
     &-social {
       ul {
         display: flex;
-      }
 
-      li {
-        padding: 10px;
-      }
+        li {
+          padding: 15px;
 
-      i {
-        color: $dark-color;
-        transition: color 0.2s;
+          i {
+            color: $black;
+            transition: color 0.2s;
 
-        &:hover {
-          color: $pink-color;
+            &:hover {
+              color: $pink;
+            }
+          }
         }
       }
     }
   }
 }
 
-// Home
 #home {
-  // Home 1: Teater Jubel
+  // Banner
   &-1 {
-    background: url(../img/banner.jpg) no-repeat center center / cover;
-    height: 70vh;
-
-    * {
-      z-index: 2;
-    }
-
-    &::before {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 70vh;
-      background: rgba(132, 108, 9, 0.5);
-    }
+    background: url("../img/Banner.jpg") no-repeat center center/cover;
+    height: 150vh;
+    color: $yellow;
+    line-height: 1.2;
 
     .content {
+      display: flex;
+      justify-content: center;
+    }
+
+    h1 {
+      font-size: 12rem;
+
+      span {
+        font-family: "Genty Demo", "Josefin Sans", serif;
+        font-size: 18rem;
+      }
+    }
+  }
+
+  // Pitch
+  &-2 {
+    background-color: $light-blue;
+    color: $yellow;
+    padding-bottom: 1rem;
+
+    .content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      p {
+        font-size: 2.2rem;
+      }
+
+      a {
+        font-weight: 700;
+        color: $yellow;
+      }
+    }
+  }
+
+  // Föreställningar
+  &-3 {
+    background: $yellow;
+  }
+
+  // Vem vet?
+  &-4 {
+    background: $blue;
+
+    .content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 4rem 0;
+      color: $yellow;
+      text-align: left;
+
+      img {
+        padding: 1rem;
+        background: $white;
+        width: 380px;
+        transition: 0.5s;
+
+        &:hover {
+          width: 400px;
+        }
+      }
+
+      .vl {
+        margin: 2rem;
+      }
+
+      a {
+        color: $yellow;
+        font-weight: 400;
+      }
+    }
+  }
+
+  // En Saga om... vadå?
+  &-5 {
+    background: $pink;
+
+    .content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 4rem 0;
+      color: $yellow;
+      text-align: right;
+
+      img {
+        padding: 1rem;
+        background: $white;
+        width: 380px;
+        transition: 0.5s;
+
+        &:hover {
+          width: 400px;
+        }
+      }
+
+      .vl {
+        margin: 2rem;
+      }
+
+      a {
+        color: $yellow;
+        font-weight: 400;
+      }
+    }
+  }
+
+  // Biljetter
+  &-6 {
+    background: $yellow;
+    padding: 2rem 0;
+
+    .top {
+      padding-bottom: 1rem;
+
+      h4 {
+        color: $pink;
+      }
+    }
+
+    .avsnitt {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      text-align: center;
-      height: 70vh;
-      color: #fff;
+
+      h3 {
+        color: $blue;
+        font-size: 3rem;
+      }
 
       p {
         font-size: 2rem;
       }
-
-      h1 {
-        font-family: $head-font;
-        font-size: 11rem;
-        text-transform: uppercase;
-      }
     }
   }
 
-  // Home 2: Pitch
-  &-2 {
-    background: $blue-color;
-    color: $yellow-color;
-
-    .content {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 2rem 0;
-
-      a {
-        font-family: $head-font;
-        color: $yellow-color;
-        transition: font-size 0.5s;
-
-        &:hover {
-          font-size: 3.4rem;
-        }
-      }
-
-      p {
-        font-size: 3rem;
-        line-height: 6rem;
-      }
-    }
-  }
-
-  // Home 3: Föreställningar
-  &-3 {
-    background: $yellow-color;
-    color: #000;
-    width: 100%;
-    padding: 2rem 0;
-
-    #forestallningar {
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-    }
-
-    h1 {
-      font-size: $headfont-size;
-      font-weight: bold;
-      text-transform: uppercase;
-      padding-top: 0;
-    }
-  }
-
-  // Home 4: Klackarna
-  &-4 {
-    width: 100%;
-    background: $blue-color;
-
-    #klackarna {
-      margin: 2rem 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding-top: 2rem;
-
-      img {
-        padding: 1rem;
-        width: 380px;
-        background: #fff;
-        transition: width 0.5s;
-
-        &:hover {
-          width: 400px;
-        }
-      }
-
-      .vl {
-        margin-left: 2rem;
-      }
-
-      .content {
-        padding: 2rem;
-
-        h1 {
-          font-size: 5rem;
-          font-family: $head-font;
-          color: $yellow-color;
-          line-height: 1;
-        }
-
-        h3 {
-          font-size: 2rem;
-          font-family: $head-font;
-          color: $yellow-color;
-          padding-bottom: 1rem;
-        }
-
-        p {
-          color: #fff;
-          font-size: 1.5rem;
-        }
-      }
-    }
-  }
-
-  // Home 5: En Saga
-  &-5 {
-    width: 100%;
-    background: $pink-color;
-
-    #saga {
-      margin: 2rem 0;
-      display: flex;
-      padding-top: 2rem;
-      align-items: center;
-      justify-content: center;
-
-      .content {
-        padding: 2rem;
-        text-align: right;
-
-        h1 {
-          font-size: 5rem;
-          font-family: $head-font;
-          color: $yellow-color;
-          line-height: 1;
-        }
-
-        h3 {
-          font-size: 2rem;
-          font-family: $head-font;
-          color: $yellow-color;
-          padding-bottom: 1rem;
-        }
-
-        p {
-          color: #fff;
-          font-size: 1.5rem;
-        }
-      }
-
-      .vl {
-        margin-right: 2rem;
-      }
-      img {
-        padding: 1rem;
-        width: 380px;
-        background: #fff;
-        transition: width 0.5s;
-
-        &:hover {
-          width: 400px;
-        }
-      }
-    }
-  }
-
-  // Home 6: Biljetter
-  &-6 {
-    width: 100%;
-    background: $yellow-color;
-
-    #biljetter {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding-top: 2rem;
-      line-height: 2;
-
-      h2 {
-        color: $pink-color;
-        padding-bottom: 1rem;
-      }
-
-      .avsnitt {
-        h4 {
-          font-size: 3rem;
-          color: $blue-color;
-          line-height: 1.5;
-        }
-
-        p {
-          font-size: 2rem;
-
-          a,
-          span {
-            font-family: $head-font;
-            color: #000;
-          }
-        }
-        iframe {
-          width: 50%;
-          height: 50%;
-        }
-      }
-    }
-  }
-
-  // Home 7: Om Oss
+  // Kontakt
   &-7 {
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background: $blue-color;
-    color: $white-color;
-    line-height: 2;
+    background: $blue;
+    color: $white;
+    padding-top: 2rem;
 
-    h1 {
-      color: $white-color;
+    a {
+      color: $white;
     }
 
-    .content {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      padding-top: 2rem;
-
-      .person {
-        padding: 1rem 4rem;
-
-        h3 {
-          font-family: $head-font;
-          font-size: 1.5rem;
-        }
-      }
-    }
-  }
-
-  // Home 8: Kontakt
-  &-8 {
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background: $yellow-color;
-
-    .mejl {
-      font-family: $head-font;
-      padding: 5rem;
+    h3 {
       font-size: 4rem;
+    }
 
-      a {
-        color: $pink-color;
-        transition: color 0.2s;
-
-        &:hover {
-          color: $blue-color;
-        }
-      }
+    .top {
+      padding-bottom: 2rem;
     }
 
     .footer {
       display: flex;
       justify-content: space-between;
+      padding-top: 2rem;
 
       .adress {
-        padding: 2rem;
-        a {
-          font-size: 4rem;
-          color: $blue-color;
-          transition: color 0.2s;
-
-          &:hover {
-            color: $pink-color;
-          }
+        h3 {
+          font-weight: 300;
         }
       }
 
-      .social {
-        ul {
-          display: flex;
-          padding-right: 2rem;
-        }
+      ul {
+        display: flex;
 
         li {
-          padding: 2rem;
+          padding: 0 2rem;
         }
+      }
+    }
+  }
+}
 
-        i {
-          color: $blue-color;
-          transition: color 0.2s;
+#forestallningar {
+  &-1 {
+    background: url("../img/Forestallningar.jpg") no-repeat center center/cover;
+    height: 80vh;
+    color: $yellow;
+
+    h1 {
+      margin-top: 54vh;
+      line-height: 1;
+    }
+
+    h3 {
+      font-weight: 400;
+    }
+  }
+}
+
+#biljetter {
+  &-1 {
+    background: url("../img/Biljetter.jpg") no-repeat center center/cover;
+    height: 80vh;
+    color: $yellow;
+
+    h1 {
+      margin-top: 54vh;
+      line-height: 1;
+    }
+
+    h3 {
+      font-weight: 400;
+    }
+  }
+}
+
+#om {
+  &-1 {
+    background: url("../img/om.jpg") no-repeat center center/cover;
+    height: 80vh;
+    color: $yellow;
+
+    h1 {
+      margin-top: 54vh;
+      line-height: 1;
+    }
+
+    h3 {
+      font-weight: 400;
+    }
+  }
+
+  &-2 {
+    color: $blue;
+    background: $yellow;
+
+    p {
+      font-size: 1.5rem;
+    }
+
+    a {
+      color: $blue;
+    }
+
+    .top {
+      padding: 2rem;
+    }
+
+    .content {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .content .person {
+      padding: 1rem 4rem;
+
+      h3 {
+        font-size: 1.8rem;
+      }
+    }
+
+    .footer {
+      padding: 2rem 0 4rem 0;
+    }
+  }
+}
+
+#arkivet {
+  &-1 {
+    background: url("../img/Arkivet.jpg") no-repeat center center/cover;
+    height: 80vh;
+    color: $yellow;
+
+    h1 {
+      margin-top: 54vh;
+      line-height: 1;
+    }
+
+    h3 {
+      font-weight: 400;
+    }
+  }
+
+  &-2 {
+    background: $yellow;
+
+    .content {
+      .avsnitt {
+        padding: 2rem;
+
+        img {
+          width: 300px;
+          padding: 1rem;
+          background: $white;
+          transition: 0.5s;
 
           &:hover {
-            color: $pink-color;
+            width: 320px;
           }
         }
       }
@@ -437,125 +444,114 @@ img {
   }
 }
 
-// Klackarna i Taket
-#klackarna {
-  // Klackarna 1
+#kontakt {
   &-1 {
-    background: $blue-color;
-    color: $white-color;
+    background: url("../img/Kontakt.jpg") no-repeat center center/cover;
+    height: 80vh;
+    color: $yellow;
 
-    .top {
-      color: $yellow-color;
-      font-family: $head-font;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding-top: 1rem;
-      h1 {
-        font-size: 5rem;
-        line-height: 1;
-      }
-      h3 {
-        font-size: 2rem;
-      }
+    h1 {
+      margin-top: 54vh;
+      line-height: 1;
     }
-    .content {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 1rem 0;
-      line-height: 2;
-      font-size: 1.2rem;
 
-      .text {
-        text-align: right;
-        padding: 2rem;
-        width: 500px;
-      }
-
-      .info {
-        padding: 0.5rem;
-        background-color: $yellow-color;
-        color: $blue-color;
-        font-family: $head-font;
-        font-size: 1.4rem;
-        width: 500px;
-      }
+    h3 {
+      font-weight: 400;
     }
   }
+}
 
-  // Klackarna 2: Bilder ur Föreställningen
-  &-2 {
-    background: $blue-color;
+#saga {
+  &-1 {
+    background: $pink;
+    color: $yellow;
 
-    .top {
-      color: $yellow-color;
-      font-family: $head-font;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding-top: 2rem;
-      position: relative;
+    .content {
+      padding: 4rem;
+
       h1 {
-        font-size: 5rem;
+        line-height: 1.2;
       }
-    }
 
-    .bilder {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      margin: 2rem 0 4rem 0;
-
-      .bild {
-        margin: 2rem;
+      img {
+        width: 500px;
+        padding: 1rem;
+        background: $white;
+        margin-bottom: 2rem;
       }
     }
   }
 }
 
-// Saga
-#saga {
-  // Saga 1
+#vemvet {
   &-1 {
-    background: $pink-color;
-    color: $white-color;
+    background: $blue;
+    color: $yellow;
 
-    .top {
-      color: $yellow-color;
-      font-family: $head-font;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding-top: 1rem;
+    .content {
+      padding: 4rem;
+
       h1 {
-        font-size: 5rem;
-        line-height: 1;
+        line-height: 1.2;
       }
-      h3 {
-        font-size: 2rem;
+
+      img {
+        width: 500px;
+        padding: 1rem;
+        background: $white;
+        margin-bottom: 2rem;
       }
     }
-    .content {
-      display: flex;
-      align-items: center;
+  }
+}
+
+#klackarna {
+  &-1 {
+    background: url("../img/KlackarnaBanner.jpg") no-repeat center center/cover;
+    height: 80vh;
+    color: $yellow;
+
+    h1 {
+      margin-top: 54vh;
+      line-height: 1;
+    }
+
+    h3 {
+      font-weight: 400;
+    }
+  }
+
+  &-2 {
+    background: $blue;
+    color: $yellow;
+
+    .text {
+      padding: 1rem;
+    }
+
+    img {
+      width: 300px;
+      padding: 1rem;
+      background: $white;
+    }
+  }
+
+  &-3 {
+    background: $blue;
+    color: $yellow;
+
+    h2 {
+      font-size: 4rem;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 1rem;
       justify-content: center;
-      padding: 1rem 0;
-      line-height: 2;
-      font-size: 1.2rem;
 
-      .text {
-        text-align: right;
-        padding: 2rem;
-        width: 500px;
-      }
-
-      .info {
-        padding: 0.5rem;
-        background-color: $yellow-color;
-        color: $pink-color;
-        font-family: $head-font;
-        font-size: 1.4rem;
-        width: 500px;
+      img {
+        width: 100%;
       }
     }
   }

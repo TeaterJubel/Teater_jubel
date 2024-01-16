@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/5cc0a5aae3.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Teater Jubel</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  </head>
+
+<body>
+  <nav id="navbar" class="navbar-content">
+    <a href="index.html">
+      <img src="img/Logga.png" alt="Teater Jubel" id="logo">
+    </a>
+    <div class="navbar-link">
+      <div class="menu-wrap">
+      <input type="checkbox" class="toggler">
+      <div class="hamburger none"><div class="none"></div></div>
+      <div class="menu">
+        <div>
+          <div>
+            <ul>
+              <li><a href="index.html">Hem</a></li>
+              <li><a href="forestallningar.html">Föreställningar</a></li>
+            <li><a href="biljetter.html" class="current">Biljetter</a></li>
+            <li><a href="om.html">Om Oss</a></li>
+            <li><a href="arkivet.html">Arkivet</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+          </ul>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="navbar-social">
+      <ul>
+        <li>
+          <a href="http://instagram.com/teaterjubel" target="_blank"
+            ><i class="fa-brands fa-instagram fa-3x"></i
+          ></a>
+        </li>
+        <li>
+          <a href="http://facebook.com/teaterjubel" target="_blank"
+            ><i class="fa-brands fa-facebook fa-3x"></i
+          ></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section id="biljetter-1">
+  <div class="container content">
+    <h1>BILJETTER</h1>
+    <h3>Här kan du boka biljetter till våra kommande föreställningar</h3>
+  </div>
+</section>
+
+<section id="home-6">
+  <div id="biljetter" class="container">
+      <div class="top">
+        <h2>Biljetter</h2>
+        <h4>Här kan du boka biljetter till våra kommande föreställningar</h4>
+        <p>Tyvärr har vi inga offentliga föreställningar för tillfället</p>
+      </div>
+      <!-- <div class="avsnitt">
+        <h3>Göteborg</h3>
+        <p>
+          <a href="saga.html">Vem Vet?</a><br>
+          <b>Teater Jaguar</b> <br>
+          Fredag 8/4 19:00
+        </p>
+        <a href="https://www.billetto.se"
+        target="_blank"
+        class="btn">Boka Här</a>
+        <div class="hl"></div>
+      </div> -->
+  </div>
+</section>
+
+
+<section id="home-7">
+  <div id="kontakt" class="container">
+    <div class="top">
+      <h2>Kontakt</h2>
+      <h4>Är du sugen på att boka oss? Eller vill du bara veta lite mer? <br>
+      Skicka iväg ett mejl!</h4>
+    </div>  
+      <a href="mailto: kontakt@teaterjubel.se"><h3>kontakt@teaterjubel.se</h3></a>
+      <div class="footer">
+          <div class="adress">
+            <a href="https://www.google.com/maps/place/Teater+Jubel/@57.734508,12.0935489,15z/data=!4m2!3m1!1s0x0:0x63d7198c0a32fa56?sa=X&ved=2ahUKEwi-9biMicKDAxWVBxAIHT-iDzoQ_BJ6BAgREAA" target="_blank"><h3>Per Ekströms Väg 5</h3></a>
+          </div>
+          <div class="social">
+            <ul>
+              <li>
+                <a href="http://instagram.com/teaterjubel" target="_blank"
+                  ><i class="fa-brands fa-instagram fa-5x"></i
+                ></a>
+              </li>
+              <li>
+                <a href="http://facebook.com/teaterjubel" target="_blank"
+                  ><i class="fa-brands fa-facebook fa-5x"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+      </div>
+  </div>
+</section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+    
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+    
+          // Store hash
+          var hash = this.hash;
+    
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+    
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+    </script>
+  </body>
+</html>
