@@ -367,6 +367,18 @@
       width: 300px;
     }
   }
+
+  #klackarna-3 {
+    .container {
+      h2 {
+        font-size: 2rem;
+      }
+
+      .gallery {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  }
 }
 
 @media (max-width: 600px) {
@@ -422,7 +434,8 @@
   #om-1,
   #arkivet-1,
   #kontakt-1,
-  #biljetter-1 {
+  #biljetter-1,
+  #klackarna-1 {
     height: 50vh;
 
     h1 {
@@ -442,6 +455,18 @@
       width: 200px;
       padding: 0.6rem;
       margin-bottom: 1rem;
+    }
+  }
+
+  #klackarna-3 {
+    .container {
+      h2 {
+        font-size: 2rem;
+      }
+
+      .gallery {
+        grid-template-columns: 1fr;
+      }
     }
   }
 }
