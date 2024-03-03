@@ -604,6 +604,18 @@ p {
       font-size: 1.4rem; }
     .container p {
       font-size: 1.2rem; }
+  .btn {
+    display: inline-block;
+    padding: 0.8rem 2rem 0.8rem 2rem;
+    color: #ffda3f;
+    background: #d15484;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    transition: all 0.5s;
+    border-radius: 1rem;
+    margin: 2rem 0 2rem 0; }
+    .btn:hover {
+      background: #252c5b; }
   #home-1 {
     height: 60vh; }
     #home-1 h1 {
