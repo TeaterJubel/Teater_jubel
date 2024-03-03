@@ -386,23 +386,23 @@
     max-width: 400px;
 
     h1 {
-      font-size: 2.4rem;
+      font-size: 2.6rem;
     }
 
     h2 {
-      font-size: 2rem;
+      font-size: 2.4rem;
     }
 
     h3 {
-      font-size: 1.4rem;
+      font-size: 1.6rem;
     }
 
     h4 {
-      font-size: 1.2rem;
+      font-size: 1.4rem;
     }
 
     p {
-      font-size: 1rem;
+      font-size: 1.2rem;
     }
   }
 
@@ -421,6 +421,18 @@
   #home-2 {
     .content p {
       font-size: 1rem;
+    }
+  }
+
+  #home-6 {
+    .avsnitt {
+      h3 {
+        font-size: 1.8rem;
+      }
+
+      p {
+        font-size: 1.4rem;
+      }
     }
   }
 
@@ -476,23 +488,23 @@
     max-width: 320px;
 
     h1 {
-      font-size: 1.8rem;
+      font-size: 2rem;
     }
 
     h2 {
-      font-size: 1.7rem;
+      font-size: 1.8rem;
     }
 
     h3 {
-      font-size: 1.2rem;
+      font-size: 1.4rem;
     }
 
     h4 {
-      font-size: 1.1rem;
+      font-size: 1.2rem;
     }
 
     p {
-      font-size: 1rem;
+      font-size: 1.1rem;
     }
   }
 
@@ -513,7 +525,7 @@
     height: 50vh;
 
     h1 {
-      font-size: 2.4rem;
+      font-size: 2.6rem;
 
       span {
         font-size: 4rem;

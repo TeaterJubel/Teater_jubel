@@ -595,15 +595,15 @@ p {
   .container {
     max-width: 400px; }
     .container h1 {
-      font-size: 2.4rem; }
+      font-size: 2.6rem; }
     .container h2 {
-      font-size: 2rem; }
+      font-size: 2.4rem; }
     .container h3 {
-      font-size: 1.4rem; }
+      font-size: 1.6rem; }
     .container h4 {
-      font-size: 1.2rem; }
+      font-size: 1.4rem; }
     .container p {
-      font-size: 1rem; }
+      font-size: 1.2rem; }
   #home-1 {
     height: 60vh; }
     #home-1 h1 {
@@ -612,6 +612,10 @@ p {
         font-size: 5rem; }
   #home-2 .content p {
     font-size: 1rem; }
+  #home-6 .avsnitt h3 {
+    font-size: 1.8rem; }
+  #home-6 .avsnitt p {
+    font-size: 1.4rem; }
   #home-7 h3 {
     font-size: 1.6rem; }
   #forestallningar-1,
@@ -644,15 +648,15 @@ p {
   .container {
     max-width: 320px; }
     .container h1 {
-      font-size: 1.8rem; }
+      font-size: 2rem; }
     .container h2 {
-      font-size: 1.7rem; }
+      font-size: 1.8rem; }
     .container h3 {
-      font-size: 1.2rem; }
+      font-size: 1.4rem; }
     .container h4 {
-      font-size: 1.1rem; }
+      font-size: 1.2rem; }
     .container p {
-      font-size: 1rem; }
+      font-size: 1.1rem; }
   #navbar .navbar-social ul li {
     padding: 5px;
     margin: 0 1.2rem; }
@@ -661,7 +665,7 @@ p {
   #home-1 {
     height: 50vh; }
     #home-1 h1 {
-      font-size: 2.4rem; }
+      font-size: 2.6rem; }
       #home-1 h1 span {
         font-size: 4rem; }
   #om-2 p {
