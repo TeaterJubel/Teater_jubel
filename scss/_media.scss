@@ -314,6 +314,11 @@
     max-width: 580px;
   }
 
+  iframe {
+    width: 400px;
+    height: 225px;
+  }
+
   #home-1 {
     height: 80vh;
 
@@ -361,7 +366,6 @@
     }
   }
 
-  #vemvet-1,
   #saga-1 {
     .content img {
       width: 300px;
@@ -462,7 +466,8 @@
   #arkivet-1,
   #kontakt-1,
   #biljetter-1,
-  #klackarna-1 {
+  #klackarna-1,
+  #vemvet-1 {
     height: 50vh;
 
     h1 {
@@ -476,7 +481,6 @@
     }
   }
 
-  #vemvet-1,
   #saga-1 {
     .content img {
       width: 200px;
@@ -586,7 +590,9 @@
   #om-1,
   #arkivet-1,
   #kontakt-1,
-  #biljetter-1 {
+  #biljetter-1,
+  #klackarna-1,
+  #vemvet-1 {
     height: 80vh;
 
     h1 {

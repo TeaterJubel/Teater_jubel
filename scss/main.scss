@@ -56,6 +56,11 @@ p {
   font-size: 1.4rem;
 }
 
+iframe {
+  width: 800px;
+  height: 450px;
+}
+
 // Navbar
 #navbar {
   position: sticky;
@@ -485,22 +490,46 @@ p {
 
 #vemvet {
   &-1 {
+    background: url("../img/VemvetBanner.jpg") no-repeat center center/cover;
+    height: 80vh;
+    color: $yellow;
+
+    h1 {
+      margin-top: 54vh;
+      line-height: 1;
+    }
+
+    h3 {
+      font-weight: 400;
+    }
+  }
+
+  &-2 {
     background: $blue;
     color: $yellow;
 
-    .content {
-      padding: 4rem;
+    .text {
+      padding: 1rem;
+    }
 
-      h1 {
-        line-height: 1.2;
-      }
+    img {
+      width: 300px;
+      padding: 1rem;
+      background: $white;
+    }
+  }
 
-      img {
-        width: 500px;
-        padding: 1rem;
-        background: $white;
-        margin-bottom: 2rem;
-      }
+  &-3 {
+    background: $blue;
+    color: $yellow;
+  }
+
+  &-4 {
+    background: $blue;
+    color: $yellow;
+
+    .text {
+      padding: 1rem;
     }
   }
 }

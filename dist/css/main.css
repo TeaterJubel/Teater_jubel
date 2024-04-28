@@ -74,6 +74,10 @@ h4 {
 p {
   font-size: 1.4rem; }
 
+iframe {
+  width: 800px;
+  height: 450px; }
+
 #navbar {
   position: sticky;
   z-index: 10;
@@ -328,17 +332,34 @@ p {
       margin-bottom: 2rem; }
 
 #vemvet-1 {
+  background: url("../img/VemvetBanner.jpg") no-repeat center center/cover;
+  height: 80vh;
+  color: #ffda3f; }
+  #vemvet-1 h1 {
+    margin-top: 54vh;
+    line-height: 1; }
+  #vemvet-1 h3 {
+    font-weight: 400; }
+
+#vemvet-2 {
   background: #252c5b;
   color: #ffda3f; }
-  #vemvet-1 .content {
-    padding: 4rem; }
-    #vemvet-1 .content h1 {
-      line-height: 1.2; }
-    #vemvet-1 .content img {
-      width: 500px;
-      padding: 1rem;
-      background: #fff;
-      margin-bottom: 2rem; }
+  #vemvet-2 .text {
+    padding: 1rem; }
+  #vemvet-2 img {
+    width: 300px;
+    padding: 1rem;
+    background: #fff; }
+
+#vemvet-3 {
+  background: #252c5b;
+  color: #ffda3f; }
+
+#vemvet-4 {
+  background: #252c5b;
+  color: #ffda3f; }
+  #vemvet-4 .text {
+    padding: 1rem; }
 
 #klackarna-1 {
   background: url("../img/KlackarnaBanner.jpg") no-repeat center center/cover;
@@ -552,6 +573,9 @@ p {
 @media (max-width: 800px) {
   .container {
     max-width: 580px; }
+  iframe {
+    width: 400px;
+    height: 225px; }
   #home-1 {
     height: 80vh; }
     #home-1 h1 {
@@ -583,7 +607,6 @@ p {
     #kontakt-1 h1,
     #biljetter-1 h1 {
       margin-top: 32vh; }
-  #vemvet-1 .content img,
   #saga-1 .content img {
     width: 300px; }
   #klackarna-3 .container h2 {
@@ -635,18 +658,19 @@ p {
   #arkivet-1,
   #kontakt-1,
   #biljetter-1,
-  #klackarna-1 {
+  #klackarna-1,
+  #vemvet-1 {
     height: 50vh; }
     #forestallningar-1 h1,
     #om-1 h1,
     #arkivet-1 h1,
     #kontakt-1 h1,
     #biljetter-1 h1,
-    #klackarna-1 h1 {
+    #klackarna-1 h1,
+    #vemvet-1 h1 {
       margin-top: 25vh; }
   #om-2 .content {
     grid-template-columns: 1fr; }
-  #vemvet-1 .content img,
   #saga-1 .content img {
     width: 200px;
     padding: 0.6rem;
@@ -696,11 +720,15 @@ p {
   #om-1,
   #arkivet-1,
   #kontakt-1,
-  #biljetter-1 {
+  #biljetter-1,
+  #klackarna-1,
+  #vemvet-1 {
     height: 80vh; }
     #forestallningar-1 h1,
     #om-1 h1,
     #arkivet-1 h1,
     #kontakt-1 h1,
-    #biljetter-1 h1 {
+    #biljetter-1 h1,
+    #klackarna-1 h1,
+    #vemvet-1 h1 {
       margin-top: 25vh; } }
