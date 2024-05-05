@@ -205,6 +205,8 @@ iframe {
     padding-bottom: 1rem; }
     #home-6 .top h4 {
       color: #d15484; }
+    #home-6 .top p .small {
+      font-size: 10px; }
   #home-6 .avsnitt {
     display: flex;
     flex-direction: column;
