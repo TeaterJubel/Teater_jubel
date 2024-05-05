@@ -76,7 +76,9 @@ p {
 
 iframe {
   width: 800px;
-  height: 450px; }
+  height: 450px;
+  padding: 8px;
+  background-color: #ffda3f; }
 
 #navbar {
   position: sticky;
@@ -576,8 +578,8 @@ iframe {
   .container {
     max-width: 580px; }
   iframe {
-    width: 400px;
-    height: 225px; }
+    width: 300px;
+    height: 168.75px; }
   #home-1 {
     height: 80vh; }
     #home-1 h1 {
