@@ -24,5 +24,17 @@
         <changefreq>monthly</changefreq>
         <priority>0.4</priority>
     </url>
+    <url>
+        <loc>https://teaterjubel.se/om</loc>
+        <lastmod>2024-06-08</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    <url>
+        <loc>https://teaterjubel.se/kontakt</loc>
+        <lastmod>2024-06-08</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.2</priority>
+    </url>
     <!-- Lägg till fler URL:er på samma sätt -->
 </urlset>
