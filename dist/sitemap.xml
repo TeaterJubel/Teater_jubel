@@ -1,37 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://teaterjubel.se/index.html</loc>
+        <loc>https://teaterjubel.se/index</loc>
         <lastmod>2024-06-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://teaterjubel.se/biljetter.html</loc>
+        <loc>https://teaterjubel.se/biljetter</loc>
         <lastmod>2024-06-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://teaterjubel.se/vemvet.html</loc>
+        <loc>https://teaterjubel.se/vemvet</loc>
         <lastmod>2024-06-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://teaterjubel.se/saga.html</loc>
+        <loc>https://teaterjubel.se/saga</loc>
         <lastmod>2024-06-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.4</priority>
     </url>
     <url>
-        <loc>https://teaterjubel.se/om.html</loc>
+        <loc>https://teaterjubel.se/om</loc>
         <lastmod>2024-06-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.3</priority>
     </url>
     <url>
-        <loc>https://teaterjubel.se/kontakt.html</loc>
+        <loc>https://teaterjubel.se/kontakt</loc>
         <lastmod>2024-06-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.2</priority>
