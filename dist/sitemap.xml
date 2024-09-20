@@ -2,15 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://teaterjubel.se/index</loc>
-        <lastmod>2024-06-08</lastmod>
+        <lastmod>2024-09-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
         <loc>https://teaterjubel.se/biljetter</loc>
-        <lastmod>2024-06-08</lastmod>
+        <lastmod>2024-09-20</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://teaterjubel.se/nastastoragrej</loc>
+        <lastmod>2024-09-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
     </url>
     <url>
         <loc>https://teaterjubel.se/vemvet</loc>
