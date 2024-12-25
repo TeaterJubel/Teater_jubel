@@ -378,6 +378,49 @@ iframe {
   #vemvet-4 .text {
     padding: 1rem; }
 
+#nastastoragrej-1 {
+  background: url("../img/nastastoragrejBanner.jpg") no-repeat center center/cover;
+  height: 80vh;
+  color: #ffda3f; }
+  #nastastoragrej-1 h1 {
+    margin-top: 54vh;
+    line-height: 1; }
+  #nastastoragrej-1 h3 {
+    font-weight: 400; }
+
+#nastastoragrej-2 {
+  background: #d15484;
+  color: #ffda3f; }
+  #nastastoragrej-2 .text {
+    padding: 1rem; }
+  #nastastoragrej-2 img {
+    width: 300px;
+    padding: 1rem;
+    background: #fff; }
+
+#nastastoragrej-3 {
+  background: #d15484;
+  color: #ffda3f; }
+  #nastastoragrej-3 h2 {
+    font-size: 4rem; }
+  #nastastoragrej-3 .gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    justify-content: center; }
+    #nastastoragrej-3 .gallery img {
+      width: 100%; }
+
+#nastastoragrej-4 {
+  background: #d15484;
+  color: #ffda3f; }
+
+#nastastoragrej-5 {
+  background: #d15484;
+  color: #ffda3f; }
+  #nastastoragrej-5 .text {
+    padding: 1rem; }
+
 #klackarna-1 {
   background: url("../img/KlackarnaBanner.jpg") no-repeat center center/cover;
   height: 80vh;
@@ -626,9 +669,11 @@ iframe {
       margin-top: 32vh; }
   #saga-1 .content img {
     width: 300px; }
-  #klackarna-3 .container h2 {
+  #klackarna-3 .container h2,
+  #nastastoragrej-3 .container h2 {
     font-size: 2rem; }
-  #klackarna-3 .container .gallery {
+  #klackarna-3 .container .gallery,
+  #nastastoragrej-3 .container .gallery {
     grid-template-columns: 1fr 1fr; } }
 
 @media (max-width: 600px) {
@@ -676,7 +721,8 @@ iframe {
   #kontakt-1,
   #biljetter-1,
   #klackarna-1,
-  #vemvet-1 {
+  #vemvet-1,
+  #nastastoragrej-1 {
     height: 50vh; }
     #forestallningar-1 h1,
     #om-1 h1,
@@ -684,7 +730,8 @@ iframe {
     #kontakt-1 h1,
     #biljetter-1 h1,
     #klackarna-1 h1,
-    #vemvet-1 h1 {
+    #vemvet-1 h1,
+    #nastastoragrej-1 h1 {
       margin-top: 25vh; }
   #om-2 .content {
     grid-template-columns: 1fr; }
@@ -692,9 +739,11 @@ iframe {
     width: 200px;
     padding: 0.6rem;
     margin-bottom: 1rem; }
-  #klackarna-3 .container h2 {
+  #klackarna-3 .container h2,
+  #nastastoragrej-3 .container h2 {
     font-size: 1.6rem; }
-  #klackarna-3 .container .gallery {
+  #klackarna-3 .container .gallery,
+  #nastastoragrej-3 .container .gallery {
     grid-template-columns: 1fr; } }
 
 @media (max-width: 450px) {
@@ -739,7 +788,8 @@ iframe {
   #kontakt-1,
   #biljetter-1,
   #klackarna-1,
-  #vemvet-1 {
+  #vemvet-1,
+  #nastastoragrej-1 {
     height: 80vh; }
     #forestallningar-1 h1,
     #om-1 h1,
@@ -747,5 +797,6 @@ iframe {
     #kontakt-1 h1,
     #biljetter-1 h1,
     #klackarna-1 h1,
-    #vemvet-1 h1 {
+    #vemvet-1 h1,
+    #nastastoragrej-1 h1 {
       margin-top: 25vh; } }
