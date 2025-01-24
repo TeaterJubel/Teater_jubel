@@ -314,6 +314,10 @@
     max-width: 580px;
   }
 
+  .recension {
+    grid-template-columns: 1fr;
+  }
+
   iframe {
     width: 300px;
     height: 168.75px;
