@@ -638,6 +638,10 @@ iframe {
 @media (max-width: 800px) {
   .container {
     max-width: 580px; }
+  .recension {
+    grid-template-columns: 1fr; }
+    .recension p {
+      padding: 0.4rem; }
   iframe {
     width: 300px;
     height: 168.75px; }

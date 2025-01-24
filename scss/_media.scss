@@ -316,6 +316,10 @@
 
   .recension {
     grid-template-columns: 1fr;
+
+    p {
+      padding: 0.4rem;
+    }
   }
 
   iframe {
