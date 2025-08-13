@@ -437,6 +437,12 @@ iframe {
     background: $yellow;
 
     .content {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+        justify-content: center;
+      
       .avsnitt {
         padding: 2rem;
 

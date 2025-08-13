@@ -54,6 +54,12 @@
     }
   }
 
+    #arkivet-2 {
+    .content {
+        grid-template-columns: 1fr 1fr;
+    }
+  }
+
   #om-2 {
     .content {
       .person {
@@ -488,6 +494,12 @@
   #om-2 {
     .content {
       grid-template-columns: 1fr;
+    }
+  }
+
+    #arkivet-2 {
+    .content {
+        grid-template-columns: 1fr;
     }
   }
 

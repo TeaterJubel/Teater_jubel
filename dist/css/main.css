@@ -320,15 +320,20 @@ iframe {
 
 #arkivet-2 {
   background: #ffda3f; }
-  #arkivet-2 .content .avsnitt {
-    padding: 2rem; }
-    #arkivet-2 .content .avsnitt img {
-      width: 300px;
-      padding: 1rem;
-      background: #fff;
-      transition: 0.5s; }
-      #arkivet-2 .content .avsnitt img:hover {
-        width: 320px; }
+  #arkivet-2 .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    justify-content: center; }
+    #arkivet-2 .content .avsnitt {
+      padding: 2rem; }
+      #arkivet-2 .content .avsnitt img {
+        width: 300px;
+        padding: 1rem;
+        background: #fff;
+        transition: 0.5s; }
+        #arkivet-2 .content .avsnitt img:hover {
+          width: 320px; }
 
 #kontakt-1 {
   background: url("../img/Kontakt.jpg") no-repeat center center/cover;
@@ -484,6 +489,8 @@ iframe {
         font-size: 10rem; }
   #home-2 .content p {
     font-size: 1.6rem; }
+  #arkivet-2 .content {
+    grid-template-columns: 1fr 1fr; }
   #om-2 .content .person {
     padding: 1rem 2rem; } }
 
@@ -745,6 +752,8 @@ iframe {
     #nastastoragrej-1 h1 {
       margin-top: 25vh; }
   #om-2 .content {
+    grid-template-columns: 1fr; }
+  #arkivet-2 .content {
     grid-template-columns: 1fr; }
   #saga-1 .content img {
     width: 200px;
