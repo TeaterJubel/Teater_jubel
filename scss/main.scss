@@ -61,6 +61,7 @@ iframe {
   height: 450px;
   padding: 8px;
   background-color: $yellow;
+  border: none;
 }
 
 // Navbar
@@ -665,6 +666,100 @@ iframe {
       img {
         width: 100%;
       }
+    }
+  }
+}
+
+// Sketcher på index-sidan
+#sketcher {
+  background: $blue;
+  color: $yellow;
+  
+  .content {
+    padding: 4rem 0 ;
+
+    iframe {
+      width: 360px;
+      height: 640px;
+    }
+
+    a {
+      color: $yellow;
+      h4 {
+        color: $white;
+      }
+    }
+  }
+}
+
+#sketcher {
+  &-1 {
+    background: $blue;
+    color: $yellow;
+    padding: 2rem 0;
+
+    h3 {
+      color: $white;
+    }
+  }
+
+  &-2 {
+    background: $blue;
+    color: $yellow;
+
+    iframe {
+      width: 360px;
+      height: 640px;
+    }
+  }
+
+    &-3 {
+    background: $blue;
+    color: $white;
+
+    a {
+      color: $yellow
+    }
+
+    span {
+      font-weight: bold;
+      color: $yellow;
+    }
+  }
+
+  &-4 {
+    background: $blue;
+    color: $yellow;
+
+    h4 {
+      color: $white;
+    }
+
+    iframe {
+      width: 360px;
+      height: 640px;
+    }
+
+    .avsnitt {
+      padding-bottom: 4rem;
+    }
+  }
+
+  &-5 {
+    background: $blue;
+    color: $yellow;
+
+    p {
+      color: $white;
+    }
+
+    .delar {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      justify-content: center;
+
+      padding-bottom: 4rem;
     }
   }
 }

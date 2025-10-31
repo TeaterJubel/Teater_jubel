@@ -523,6 +523,37 @@
       }
     }
   }
+
+  #sketcher {
+    .content {
+      iframe {
+        width: 270px;
+        height: 480px;
+      }
+    }
+  }
+
+  #sketcher {
+    &-2 {
+      iframe {
+        width: 270px;
+        height: 480px;
+      }
+    }
+
+    &-4 {
+      iframe {
+        width: 270px;
+        height: 480px;
+      }
+    }
+
+    &-5 {
+      .delar {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
 }
 
 @media (max-width: 450px) {

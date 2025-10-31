@@ -111,7 +111,8 @@ iframe {
   width: 800px;
   height: 450px;
   padding: 8px;
-  background-color: #ffda3f; }
+  background-color: #ffda3f;
+  border: none; }
 
 #navbar {
   position: sticky;
@@ -481,6 +482,65 @@ iframe {
     #klackarna-3 .gallery img {
       width: 100%; }
 
+#sketcher {
+  background: #252c5b;
+  color: #ffda3f; }
+  #sketcher .content {
+    padding: 4rem 0; }
+    #sketcher .content iframe {
+      width: 360px;
+      height: 640px; }
+    #sketcher .content a {
+      color: #ffda3f; }
+      #sketcher .content a h4 {
+        color: #fff; }
+
+#sketcher-1 {
+  background: #252c5b;
+  color: #ffda3f;
+  padding: 2rem 0; }
+  #sketcher-1 h3 {
+    color: #fff; }
+
+#sketcher-2 {
+  background: #252c5b;
+  color: #ffda3f; }
+  #sketcher-2 iframe {
+    width: 360px;
+    height: 640px; }
+
+#sketcher-3 {
+  background: #252c5b;
+  color: #fff; }
+  #sketcher-3 a {
+    color: #ffda3f; }
+  #sketcher-3 span {
+    font-weight: bold;
+    color: #ffda3f; }
+
+#sketcher-4 {
+  background: #252c5b;
+  color: #ffda3f; }
+  #sketcher-4 h4 {
+    color: #fff; }
+  #sketcher-4 iframe {
+    width: 360px;
+    height: 640px; }
+  #sketcher-4 .avsnitt {
+    padding-bottom: 4rem; }
+
+#sketcher-5 {
+  background: #252c5b;
+  color: #ffda3f; }
+  #sketcher-5 p {
+    color: #fff; }
+  #sketcher-5 .delar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    justify-content: center;
+    padding-bottom: 4rem; }
+
 @media (max-width: 1400px) {
   .container {
     max-width: 990px; }
@@ -779,6 +839,17 @@ iframe {
     font-size: 1.6rem; }
   #klackarna-3 .container .gallery,
   #nastastoragrej-3 .container .gallery {
+    grid-template-columns: 1fr; }
+  #sketcher .content iframe {
+    width: 270px;
+    height: 480px; }
+  #sketcher-2 iframe {
+    width: 270px;
+    height: 480px; }
+  #sketcher-4 iframe {
+    width: 270px;
+    height: 480px; }
+  #sketcher-5 .delar {
     grid-template-columns: 1fr; } }
 
 @media (max-width: 450px) {
