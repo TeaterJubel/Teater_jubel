@@ -534,6 +534,8 @@ iframe {
   color: #ffda3f; }
   #sketcher-5 p {
     color: #fff; }
+  #sketcher-5 .rubrik {
+    padding-bottom: 2rem; }
   #sketcher-5 .delar {
     display: grid;
     grid-template-columns: 1fr 1fr;

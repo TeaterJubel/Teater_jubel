@@ -752,9 +752,9 @@ iframe {
     p {
       color: $white;
     }
-
+      
     .rubrik {
-      padding-bottom: 4rem;
+      padding-bottom: 2rem;
     }
 
     .delar {
@@ -767,6 +767,7 @@ iframe {
     }
   }
 }
+
 
 // Import Media Queries
 @import "media";
