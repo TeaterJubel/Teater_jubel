@@ -83,7 +83,7 @@ iframe {
 
   .navbar {
     &-content {
-      width: calc(100%-10px);
+      width: calc(100% - 10px);
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -768,6 +768,27 @@ iframe {
   }
 }
 
+#pensionar {
+  &-1 {
+    background: $blue;
+    color: $yellow;
+
+    .content {
+      padding: 4rem;
+
+      h1 {
+        line-height: 1.2;
+      }
+
+      img {
+        width: 500px;
+        padding: 1rem;
+        background: $white;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}
 
 // Import Media Queries
 @import "media";
