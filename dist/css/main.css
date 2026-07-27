@@ -1083,8 +1083,8 @@ iframe {
     grid-template-columns: 1fr;
   }
   #saga-1 .content img, #pensionar-1 .content img {
-    width: 200px;
-    padding: 0.6rem;
+    width: 260px;
+    padding: 0.8rem;
     margin-bottom: 1rem;
   }
   #klackarna-3 .container h2,
