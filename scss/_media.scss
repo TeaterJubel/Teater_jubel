@@ -380,7 +380,8 @@
     }
   }
 
-  #saga-1 {
+  #saga-1, 
+  #pensionar-1 {
     .content img {
       width: 300px;
     }
@@ -424,6 +425,7 @@
       font-size: 1.2rem;
     }
   }
+
   .btn {
     display: inline-block;
     padding: 0.8rem 2rem 0.8rem 2rem;
@@ -491,6 +493,19 @@
     }
   }
 
+  #pensionar-1 {
+    .content h1 {
+      font-size: 1.8rem;
+    }
+    h3 {
+      font-size: 1.4rem;
+      padding-top: 1rem;
+    }
+    p {
+      padding-top: 1rem;
+    }
+  }
+
   #om-2 {
     .content {
       grid-template-columns: 1fr;
@@ -503,7 +518,7 @@
     }
   }
 
-  #saga-1 {
+  #saga-1, #pensionar-1 {
     .content img {
       width: 200px;
       padding: 0.6rem;

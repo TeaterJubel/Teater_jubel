@@ -683,7 +683,7 @@ iframe {
   color: #ffda3f;
 }
 #pensionar-1 .content {
-  padding: 4rem;
+  padding: 1.8rem;
 }
 #pensionar-1 .content h1 {
   line-height: 1.2;
@@ -979,7 +979,8 @@ iframe {
   #biljetter-1 h1 {
     margin-top: 32vh;
   }
-  #saga-1 .content img {
+  #saga-1 .content img,
+  #pensionar-1 .content img {
     width: 300px;
   }
   #klackarna-3 .container h2,
@@ -1065,13 +1066,23 @@ iframe {
   #nastastoragrej-1 h1 {
     margin-top: 25vh;
   }
+  #pensionar-1 .content h1 {
+    font-size: 1.8rem;
+  }
+  #pensionar-1 h3 {
+    font-size: 1.4rem;
+    padding-top: 1rem;
+  }
+  #pensionar-1 p {
+    padding-top: 1rem;
+  }
   #om-2 .content {
     grid-template-columns: 1fr;
   }
   #arkivet-2 .content {
     grid-template-columns: 1fr;
   }
-  #saga-1 .content img {
+  #saga-1 .content img, #pensionar-1 .content img {
     width: 200px;
     padding: 0.6rem;
     margin-bottom: 1rem;
